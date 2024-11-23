@@ -1,0 +1,10 @@
+Dupont Jean A123456789 1234567890 jean.dupont@example.com Paris 1 Très_satisfaisant
+Martin Claire B987654321 1286608618 claire.martin@example.com Lyon 1 Satisfaisant
+Bernard Paul C123987456 -2042043362 paul.bernard@example.com Marseille 1 Moyen
+Durand Sophie D456321789 -1078417426 sophie.durand@example.com Toulouse 1 Insuffisant
+Moreau Luc E741852963 1042652818 luc.moreau@example.com Bordeaux 1 Excellent
+Lemoine Alice F123654987 -698700025 alice.lemoine@example.com Lille 0 Excellent
+Perrot Louis G987321654 272923938 louis.perrot@example.com Rennes 0 Moyen
+Roche Emma H741852963 1048592818 emma.roche@example.com Nantes 0 Très_satisfaisant
+Fontaine Hugo J852963741 -1176236072 hugo.fontaine@example.com Grenoble 0 Insuffisant
+Blanc Camille K369852147 1472583690 camille.blanc@example.com Dijon 1 Satisfaisant
