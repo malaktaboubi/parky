@@ -394,3 +394,43 @@ on_buttonGestionPark_clicked           (GtkButton       *button,
 
 }
 
+
+void
+on_buttoncancelsupp_clicked            (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_buttoncomfirmsupp_clicked           (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_buttonHelp_clicked                  (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_buttonAbout_clicked                 (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_radiobuttonmf_toggled               (GtkToggleButton *togglebutton,
+                                        gpointer         user_data)
+{
+
+}
+

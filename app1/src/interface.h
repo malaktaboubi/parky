@@ -11,6 +11,6 @@ GtkWidget* create_w3 (void);
 GtkWidget* create_w6 (void);
 GtkWidget* create_w4 (void);
 GtkWidget* create_w2 (void);
-GtkWidget* create_w1 (void);
 GtkWidget* create_inscription (void);
 GtkWidget* create_w4listeCit (void);
+GtkWidget* create_w1 (void);
