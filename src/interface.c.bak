@@ -36,8 +36,8 @@ create_w4espacecitoyen (void)
   GtkWidget *vbox2;
   GtkWidget *imageCity;
   GtkWidget *fixed2;
-  GtkWidget *LabelPreespc;
   GtkWidget *labelNespc;
+  GtkWidget *LabelPreespc;
   GtkWidget *vbox5;
   GtkWidget *toolbar3;
   GtkIconSize tmp_toolbar_icon_size;
@@ -106,15 +106,15 @@ create_w4espacecitoyen (void)
   gtk_box_pack_start (GTK_BOX (vbox2), fixed2, TRUE, TRUE, 0);
   gtk_widget_set_size_request (fixed2, -1, 252);
 
-  LabelPreespc = gtk_label_new (_("Pr\303\251nom"));
-  gtk_widget_show (LabelPreespc);
-  gtk_fixed_put (GTK_FIXED (fixed2), LabelPreespc, 0, 32);
-  gtk_widget_set_size_request (LabelPreespc, 200, 30);
-
   labelNespc = gtk_label_new (_("Nom"));
   gtk_widget_show (labelNespc);
   gtk_fixed_put (GTK_FIXED (fixed2), labelNespc, 0, 0);
   gtk_widget_set_size_request (labelNespc, 200, 34);
+
+  LabelPreespc = gtk_label_new (_("Pr\303\251nom"));
+  gtk_widget_show (LabelPreespc);
+  gtk_fixed_put (GTK_FIXED (fixed2), LabelPreespc, 0, 32);
+  gtk_widget_set_size_request (LabelPreespc, 200, 30);
 
   vbox5 = gtk_vbox_new (FALSE, 0);
   gtk_widget_show (vbox5);
@@ -144,6 +144,7 @@ create_w4espacecitoyen (void)
   tmp_image = gtk_image_new_from_stock ("gtk-properties", tmp_toolbar_icon_size);
   gtk_widget_show (tmp_image);
   gtk_tool_button_set_icon_widget (GTK_TOOL_BUTTON (togglebuttonPara), tmp_image);
+  gtk_widget_show (togglebuttonPara);
   gtk_container_add (GTK_CONTAINER (toolbar3), togglebuttonPara);
   gtk_widget_set_size_request (togglebuttonPara, -1, 33);
 
@@ -278,8 +279,8 @@ create_w4espacecitoyen (void)
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, vbox2, "vbox2");
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, imageCity, "imageCity");
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, fixed2, "fixed2");
-  GLADE_HOOKUP_OBJECT (w4espacecitoyen, LabelPreespc, "LabelPreespc");
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, labelNespc, "labelNespc");
+  GLADE_HOOKUP_OBJECT (w4espacecitoyen, LabelPreespc, "LabelPreespc");
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, vbox5, "vbox5");
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, toolbar3, "toolbar3");
   GLADE_HOOKUP_OBJECT (w4espacecitoyen, toolitem1, "toolitem1");
@@ -3083,7 +3084,7 @@ create_w4 (void)
   GtkWidget *w4;
   GtkWidget *vbox11;
   GtkWidget *hbox55;
-  GtkWidget *buttonREturnc;
+  GtkWidget *buttonReturncit;
   GtkWidget *image76;
   GtkWidget *label141;
   GtkWidget *notebook4;
@@ -3185,14 +3186,14 @@ create_w4 (void)
   gtk_widget_show (hbox55);
   gtk_box_pack_start (GTK_BOX (vbox11), hbox55, FALSE, FALSE, 0);
 
-  buttonREturnc = gtk_button_new ();
-  gtk_widget_show (buttonREturnc);
-  gtk_box_pack_start (GTK_BOX (hbox55), buttonREturnc, FALSE, FALSE, 0);
-  gtk_widget_set_size_request (buttonREturnc, 50, 50);
+  buttonReturncit = gtk_button_new ();
+  gtk_widget_show (buttonReturncit);
+  gtk_box_pack_start (GTK_BOX (hbox55), buttonReturncit, FALSE, FALSE, 0);
+  gtk_widget_set_size_request (buttonReturncit, 50, 50);
 
   image76 = gtk_image_new_from_stock ("gtk-go-back", GTK_ICON_SIZE_BUTTON);
   gtk_widget_show (image76);
-  gtk_container_add (GTK_CONTAINER (buttonREturnc), image76);
+  gtk_container_add (GTK_CONTAINER (buttonReturncit), image76);
 
   label141 = gtk_label_new (_("<b>Mes informations</b>"));
   gtk_widget_show (label141);
@@ -3608,6 +3609,9 @@ create_w4 (void)
   gtk_widget_show (label339);
   gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook4), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook4), 2), label339);
 
+  g_signal_connect ((gpointer) buttonReturncit, "clicked",
+                    G_CALLBACK (on_buttonReturncit_clicked),
+                    NULL);
   g_signal_connect ((gpointer) button55, "clicked",
                     G_CALLBACK (on_button4_clicked),
                     NULL);
@@ -3646,7 +3650,7 @@ create_w4 (void)
   GLADE_HOOKUP_OBJECT_NO_REF (w4, w4, "w4");
   GLADE_HOOKUP_OBJECT (w4, vbox11, "vbox11");
   GLADE_HOOKUP_OBJECT (w4, hbox55, "hbox55");
-  GLADE_HOOKUP_OBJECT (w4, buttonREturnc, "buttonREturnc");
+  GLADE_HOOKUP_OBJECT (w4, buttonReturncit, "buttonReturncit");
   GLADE_HOOKUP_OBJECT (w4, image76, "image76");
   GLADE_HOOKUP_OBJECT (w4, label141, "label141");
   GLADE_HOOKUP_OBJECT (w4, notebook4, "notebook4");
@@ -5775,5 +5779,24 @@ create_dialogaffecteragent (void)
   GLADE_HOOKUP_OBJECT (dialogaffecteragent, closebutton3, "closebutton3");
 
   return dialogaffecteragent;
+}
+
+GtkWidget*
+create_aboutdialog1 (void)
+{
+  GtkWidget *aboutdialog1;
+  /* TRANSLATORS: Replace this string with your names, one name per line. */
+  gchar *translators = _("translator-credits");
+
+  aboutdialog1 = gtk_about_dialog_new ();
+  gtk_container_set_border_width (GTK_CONTAINER (aboutdialog1), 5);
+  gtk_about_dialog_set_version (GTK_ABOUT_DIALOG (aboutdialog1), VERSION);
+  gtk_about_dialog_set_name (GTK_ABOUT_DIALOG (aboutdialog1), _("app"));
+  gtk_about_dialog_set_translator_credits (GTK_ABOUT_DIALOG (aboutdialog1), translators);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (aboutdialog1, aboutdialog1, "aboutdialog1");
+
+  return aboutdialog1;
 }
 

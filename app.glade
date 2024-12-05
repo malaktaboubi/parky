@@ -14041,4 +14041,13 @@ disponibles: </property>
   </child>
 </widget>
 
+<widget class="GtkAboutDialog" id="aboutdialog1">
+  <property name="border_width">5</property>
+  <property name="visible">True</property>
+  <property name="destroy_with_parent">False</property>
+  <property name="name" translatable="yes">app</property>
+  <property name="wrap_license">False</property>
+  <property name="translator_credits" translatable="yes" comments="TRANSLATORS: Replace this string with your names, one name per line.">translator-credits</property>
+</widget>
+
 </glade-interface>

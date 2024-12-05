@@ -5781,3 +5781,22 @@ create_dialogaffecteragent (void)
   return dialogaffecteragent;
 }
 
+GtkWidget*
+create_aboutdialog1 (void)
+{
+  GtkWidget *aboutdialog1;
+  /* TRANSLATORS: Replace this string with your names, one name per line. */
+  gchar *translators = _("translator-credits");
+
+  aboutdialog1 = gtk_about_dialog_new ();
+  gtk_container_set_border_width (GTK_CONTAINER (aboutdialog1), 5);
+  gtk_about_dialog_set_version (GTK_ABOUT_DIALOG (aboutdialog1), VERSION);
+  gtk_about_dialog_set_name (GTK_ABOUT_DIALOG (aboutdialog1), _("app"));
+  gtk_about_dialog_set_translator_credits (GTK_ABOUT_DIALOG (aboutdialog1), translators);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (aboutdialog1, aboutdialog1, "aboutdialog1");
+
+  return aboutdialog1;
+}
+
