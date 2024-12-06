@@ -538,3 +538,43 @@ on_closebutton3_clicked                (GtkButton       *button,
 
 }
 
+
+void
+on_buttonReturncit_clicked             (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_buttonReturnad_clicked              (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_buttonmodifinfo_clicked             (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_button4pdf_clicked                  (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_buttonRetunad_clicked               (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
