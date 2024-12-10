@@ -293,3 +293,39 @@ on_radiobuttonaff2_toggled             (GtkToggleButton *togglebutton,
 void
 on_radiobuttonnonaff2_toggled          (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
+
+void
+on_checkbutton_confadd_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_buttonajoutag2_clicked              (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_radiobutton_homt_toggled            (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobuttonn_femt_toggled           (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_buttonmodifag_clicked               (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_checkbutton_confmod_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobutton_femmod_toggled          (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobutton_hommodt_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_buttonrefresh2_clicked              (GtkButton       *button,
+                                        gpointer         user_data);
