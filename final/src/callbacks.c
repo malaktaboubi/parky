@@ -578,3 +578,19 @@ on_buttonRetunad_clicked               (GtkButton       *button,
 
 }
 
+
+void
+on_radiobuttonaff2_toggled             (GtkToggleButton *togglebutton,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_radiobuttonnonaff2_toggled          (GtkToggleButton *togglebutton,
+                                        gpointer         user_data)
+{
+
+}
+
