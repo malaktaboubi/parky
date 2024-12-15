@@ -666,3 +666,27 @@ on_buttonrefresh2_clicked              (GtkButton       *button,
 
 }
 
+
+void
+on_buttonReturncit_clicked             (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_enrg1_clicked                       (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+
+void
+on_supprimer_clicked                   (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
