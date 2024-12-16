@@ -5861,6 +5861,23 @@ Cette action est définitive.</property>
 	      <property name="visible">True</property>
 
 	      <child>
+		<widget class="GtkImage" id="image43">
+		  <property name="width_request">170</property>
+		  <property name="height_request">130</property>
+		  <property name="visible">True</property>
+		  <property name="pixbuf">user_3_optimized_optimized.png</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		</widget>
+		<packing>
+		  <property name="x">184</property>
+		  <property name="y">0</property>
+		</packing>
+	      </child>
+
+	      <child>
 		<widget class="GtkTable" id="table1">
 		  <property name="border_width">2</property>
 		  <property name="width_request">352</property>
@@ -6129,23 +6146,6 @@ Cette action est définitive.</property>
 		<packing>
 		  <property name="x">96</property>
 		  <property name="y">136</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkImage" id="image43">
-		  <property name="width_request">170</property>
-		  <property name="height_request">130</property>
-		  <property name="visible">True</property>
-		  <property name="pixbuf">user_3_optimized_optimized.png</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		</widget>
-		<packing>
-		  <property name="x">184</property>
-		  <property name="y">0</property>
 		</packing>
 	      </child>
 
@@ -6733,13 +6733,13 @@ Cette action est définitive.</property>
 			  <child>
 			    <widget class="GtkLabel" id="label504">
 			      <property name="visible">True</property>
-			      <property name="label" translatable="yes">label504</property>
+			      <property name="label" translatable="yes">Governorat:</property>
 			      <property name="use_underline">False</property>
 			      <property name="use_markup">False</property>
 			      <property name="justify">GTK_JUSTIFY_LEFT</property>
 			      <property name="wrap">False</property>
 			      <property name="selectable">False</property>
-			      <property name="xalign">0.5</property>
+			      <property name="xalign">0</property>
 			      <property name="yalign">0.5</property>
 			      <property name="xpad">0</property>
 			      <property name="ypad">0</property>
@@ -6758,6 +6758,30 @@ Cette action est définitive.</property>
 			  <child>
 			    <widget class="GtkComboBox" id="combobox2">
 			      <property name="visible">True</property>
+			      <property name="items" translatable="yes">Ariana
+Béja
+Ben Arous
+Bizerte
+Gabès
+Gafsa
+Jendouba
+Kairouan
+Kasserine
+Kebili
+Kef
+Mahdia
+Manouba
+Médenine
+Monastir
+Nabeul
+Sfax
+Sidi Bouzid
+Siliana
+Sousse
+Tataouine
+Tozeur
+Tunis
+Zaghouan</property>
 			      <property name="add_tearoffs">False</property>
 			      <property name="focus_on_click">True</property>
 			    </widget>
@@ -6945,19 +6969,31 @@ Cette action est définitive.</property>
 		  </child>
 
 		  <child>
-		    <widget class="GtkImage" id="image45">
-		      <property name="width_request">128</property>
-		      <property name="height_request">112</property>
+		    <widget class="GtkButton" id="button4modifphoto">
+		      <property name="width_request">43</property>
+		      <property name="height_request">37</property>
 		      <property name="visible">True</property>
-		      <property name="pixbuf">user_3_optimized_optimized.png</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
+		      <property name="tooltip" translatable="yes">changer la photo de profil</property>
+		      <property name="can_focus">True</property>
+		      <property name="relief">GTK_RELIEF_NORMAL</property>
+		      <property name="focus_on_click">True</property>
+		      <signal name="clicked" handler="on_button4modifphoto_clicked" last_modification_time="Mon, 28 Oct 2024 10:40:42 GMT"/>
+
+		      <child>
+			<widget class="GtkImage" id="image44">
+			  <property name="visible">True</property>
+			  <property name="stock">gtk-edit</property>
+			  <property name="icon_size">4</property>
+			  <property name="xalign">0.5</property>
+			  <property name="yalign">0.5</property>
+			  <property name="xpad">0</property>
+			  <property name="ypad">0</property>
+			</widget>
+		      </child>
 		    </widget>
 		    <packing>
-		      <property name="x">216</property>
-		      <property name="y">0</property>
+		      <property name="x">333</property>
+		      <property name="y">76</property>
 		    </packing>
 		  </child>
 
@@ -7123,38 +7159,9 @@ Cette action est définitive.</property>
 		  </child>
 
 		  <child>
-		    <widget class="GtkButton" id="button4modifphoto">
-		      <property name="width_request">43</property>
-		      <property name="height_request">37</property>
-		      <property name="visible">True</property>
-		      <property name="tooltip" translatable="yes">changer la photo de profil</property>
-		      <property name="can_focus">True</property>
-		      <property name="relief">GTK_RELIEF_NORMAL</property>
-		      <property name="focus_on_click">True</property>
-		      <signal name="clicked" handler="on_button4modifphoto_clicked" last_modification_time="Mon, 28 Oct 2024 10:40:42 GMT"/>
-
-		      <child>
-			<widget class="GtkImage" id="image44">
-			  <property name="visible">True</property>
-			  <property name="stock">gtk-edit</property>
-			  <property name="icon_size">4</property>
-			  <property name="xalign">0.5</property>
-			  <property name="yalign">0.5</property>
-			  <property name="xpad">0</property>
-			  <property name="ypad">0</property>
-			</widget>
-		      </child>
-		    </widget>
-		    <packing>
-		      <property name="x">333</property>
-		      <property name="y">76</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkCheckButton" id="checkbutton7">
-		      <property name="width_request">0</property>
-		      <property name="height_request">0</property>
+		    <widget class="GtkCheckButton" id="checkbuttonmodifpwd">
+		      <property name="width_request">240</property>
+		      <property name="height_request">35</property>
 		      <property name="visible">True</property>
 		      <property name="can_focus">True</property>
 		      <property name="label" translatable="yes">Modifier le mot de passe </property>
@@ -7168,6 +7175,23 @@ Cette action est définitive.</property>
 		    <packing>
 		      <property name="x">328</property>
 		      <property name="y">144</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkImage" id="image45">
+		      <property name="width_request">128</property>
+		      <property name="height_request">112</property>
+		      <property name="visible">True</property>
+		      <property name="pixbuf">user_3_optimized_optimized.png</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="x">216</property>
+		      <property name="y">0</property>
 		    </packing>
 		  </child>
 		</widget>
@@ -7307,6 +7331,32 @@ Cette action est définitive.</property>
 	      </child>
 
 	      <child>
+		<widget class="GtkLabel" id="label341">
+		  <property name="width_request">120</property>
+		  <property name="height_request">32</property>
+		  <property name="visible">True</property>
+		  <property name="label" translatable="yes">&lt;b&gt;Totale:&lt;/b&gt;</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">True</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
+		</widget>
+		<packing>
+		  <property name="x">408</property>
+		  <property name="y">32</property>
+		</packing>
+	      </child>
+
+	      <child>
 		<widget class="GtkButton" id="button4calf">
 		  <property name="width_request">144</property>
 		  <property name="height_request">44</property>
@@ -7357,32 +7407,6 @@ Cette action est définitive.</property>
 		<packing>
 		  <property name="x">232</property>
 		  <property name="y">112</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkLabel" id="label341">
-		  <property name="width_request">120</property>
-		  <property name="height_request">32</property>
-		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">&lt;b&gt;Totale:&lt;/b&gt;</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">True</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
-		</widget>
-		<packing>
-		  <property name="x">408</property>
-		  <property name="y">32</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -10453,6 +10477,30 @@ mot de passe:</property>
 	      <property name="width_request">180</property>
 	      <property name="height_request">31</property>
 	      <property name="visible">True</property>
+	      <property name="items" translatable="yes">Ariana
+Béja
+Ben Arous
+Bizerte
+Gabès
+Gafsa
+Jendouba
+Kairouan
+Kasserine
+Kebili
+Kef
+Mahdia
+Manouba
+Médenine
+Monastir
+Nabeul
+Sfax
+Sidi Bouzid
+Siliana
+Sousse
+Tataouine
+Tozeur
+Tunis
+Zaghouan</property>
 	      <property name="add_tearoffs">False</property>
 	      <property name="focus_on_click">True</property>
 	    </widget>

@@ -2411,6 +2411,7 @@ create_w4 (void)
   GtkWidget *label141;
   GtkWidget *notebook4;
   GtkWidget *fixed24;
+  GtkWidget *image43;
   GtkWidget *table1;
   GtkWidget *labelpr41;
   GtkWidget *labeln41;
@@ -2421,7 +2422,6 @@ create_w4 (void)
   GtkWidget *labeladr41;
   GtkWidget *labeltel41;
   GtkWidget *labelmail41;
-  GtkWidget *image43;
   GtkWidget *buttonmodifinfo;
   GtkWidget *alignment31;
   GtkWidget *hbox29;
@@ -2467,7 +2467,8 @@ create_w4 (void)
   GtkWidget *entrympass;
   GtkWidget *label169;
   GtkWidget *entrycheckpass;
-  GtkWidget *image45;
+  GtkWidget *button4modifphoto;
+  GtkWidget *image44;
   GtkWidget *buttonmodif4;
   GtkWidget *alignment60;
   GtkWidget *hbox59;
@@ -2478,9 +2479,8 @@ create_w4 (void)
   GtkWidget *hbox60;
   GtkWidget *image90;
   GtkWidget *label337;
-  GtkWidget *button4modifphoto;
-  GtkWidget *image44;
-  GtkWidget *checkbutton7;
+  GtkWidget *checkbuttonmodifpwd;
+  GtkWidget *image45;
   GtkWidget *label171;
   GtkWidget *fixed63;
   GtkWidget *hbox62;
@@ -2489,10 +2489,10 @@ create_w4 (void)
   GtkWidget *spinbuttonselectmonth;
   GtkWidget *scrolledwindow11;
   GtkWidget *treeview10;
+  GtkWidget *label341;
   GtkWidget *button4calf;
   GtkWidget *button4pdf;
   GtkWidget *buttonFiltrer;
-  GtkWidget *label341;
   GtkWidget *label339;
   GtkTooltips *tooltips;
 
@@ -2533,6 +2533,11 @@ create_w4 (void)
   fixed24 = gtk_fixed_new ();
   gtk_widget_show (fixed24);
   gtk_container_add (GTK_CONTAINER (notebook4), fixed24);
+
+  image43 = create_pixmap (w4, "user_3_optimized_optimized.png");
+  gtk_widget_show (image43);
+  gtk_fixed_put (GTK_FIXED (fixed24), image43, 184, 0);
+  gtk_widget_set_size_request (image43, 170, 130);
 
   table1 = gtk_table_new (9, 1, FALSE);
   gtk_widget_show (table1);
@@ -2609,11 +2614,6 @@ create_w4 (void)
                     (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
                     (GtkAttachOptions) (0), 0, 0);
   gtk_misc_set_alignment (GTK_MISC (labelmail41), 0, 0.5);
-
-  image43 = create_pixmap (w4, "user_3_optimized_optimized.png");
-  gtk_widget_show (image43);
-  gtk_fixed_put (GTK_FIXED (fixed24), image43, 184, 0);
-  gtk_widget_set_size_request (image43, 170, 130);
 
   buttonmodifinfo = gtk_button_new ();
   gtk_widget_show (buttonmodifinfo);
@@ -2772,13 +2772,38 @@ create_w4 (void)
   gtk_widget_set_size_request (entrymadr, -1, 24);
   gtk_entry_set_invisible_char (GTK_ENTRY (entrymadr), 8226);
 
-  label504 = gtk_label_new (_("label504"));
+  label504 = gtk_label_new (_("Governorat:"));
   gtk_widget_show (label504);
   gtk_box_pack_start (GTK_BOX (vbox13), label504, FALSE, FALSE, 0);
+  gtk_misc_set_alignment (GTK_MISC (label504), 0, 0.5);
 
   combobox2 = gtk_combo_box_new_text ();
   gtk_widget_show (combobox2);
   gtk_box_pack_start (GTK_BOX (vbox13), combobox2, TRUE, TRUE, 0);
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Ariana"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("B\303\251ja"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Ben Arous"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Bizerte"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Gab\303\250s"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Gafsa"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Jendouba"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Kairouan"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Kasserine"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Kebili"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Kef"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Mahdia"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Manouba"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("M\303\251denine"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Monastir"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Nabeul"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Sfax"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Sidi Bouzid"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Siliana"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Sousse"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Tataouine"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Tozeur"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Tunis"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox2), _("Zaghouan"));
 
   hbox31 = gtk_hbox_new (FALSE, 0);
   gtk_widget_show (hbox31);
@@ -2822,10 +2847,15 @@ create_w4 (void)
   gtk_widget_set_size_request (entrycheckpass, -1, 24);
   gtk_entry_set_invisible_char (GTK_ENTRY (entrycheckpass), 8226);
 
-  image45 = create_pixmap (w4, "user_3_optimized_optimized.png");
-  gtk_widget_show (image45);
-  gtk_fixed_put (GTK_FIXED (fixed25), image45, 216, 0);
-  gtk_widget_set_size_request (image45, 128, 112);
+  button4modifphoto = gtk_button_new ();
+  gtk_widget_show (button4modifphoto);
+  gtk_fixed_put (GTK_FIXED (fixed25), button4modifphoto, 333, 76);
+  gtk_widget_set_size_request (button4modifphoto, 43, 37);
+  gtk_tooltips_set_tip (tooltips, button4modifphoto, _("changer la photo de profil"), NULL);
+
+  image44 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image44);
+  gtk_container_add (GTK_CONTAINER (button4modifphoto), image44);
 
   buttonmodif4 = gtk_button_new ();
   gtk_widget_show (buttonmodif4);
@@ -2869,20 +2899,15 @@ create_w4 (void)
   gtk_widget_show (label337);
   gtk_box_pack_start (GTK_BOX (hbox60), label337, FALSE, FALSE, 0);
 
-  button4modifphoto = gtk_button_new ();
-  gtk_widget_show (button4modifphoto);
-  gtk_fixed_put (GTK_FIXED (fixed25), button4modifphoto, 333, 76);
-  gtk_widget_set_size_request (button4modifphoto, 43, 37);
-  gtk_tooltips_set_tip (tooltips, button4modifphoto, _("changer la photo de profil"), NULL);
+  checkbuttonmodifpwd = gtk_check_button_new_with_mnemonic (_("Modifier le mot de passe "));
+  gtk_widget_show (checkbuttonmodifpwd);
+  gtk_fixed_put (GTK_FIXED (fixed25), checkbuttonmodifpwd, 328, 144);
+  gtk_widget_set_size_request (checkbuttonmodifpwd, 240, 35);
 
-  image44 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
-  gtk_widget_show (image44);
-  gtk_container_add (GTK_CONTAINER (button4modifphoto), image44);
-
-  checkbutton7 = gtk_check_button_new_with_mnemonic (_("Modifier le mot de passe "));
-  gtk_widget_show (checkbutton7);
-  gtk_fixed_put (GTK_FIXED (fixed25), checkbutton7, 328, 144);
-  gtk_widget_set_size_request (checkbutton7, 0, 0);
+  image45 = create_pixmap (w4, "user_3_optimized_optimized.png");
+  gtk_widget_show (image45);
+  gtk_fixed_put (GTK_FIXED (fixed25), image45, 216, 0);
+  gtk_widget_set_size_request (image45, 128, 112);
 
   label171 = gtk_label_new (_("Modifier vos informations"));
   gtk_widget_show (label171);
@@ -2922,6 +2947,13 @@ create_w4 (void)
   gtk_tree_view_set_fixed_height_mode (GTK_TREE_VIEW (treeview10), TRUE);
   gtk_tree_view_set_hover_selection (GTK_TREE_VIEW (treeview10), TRUE);
 
+  label341 = gtk_label_new (_("<b>Totale:</b>"));
+  gtk_widget_show (label341);
+  gtk_fixed_put (GTK_FIXED (fixed63), label341, 408, 32);
+  gtk_widget_set_size_request (label341, 120, 32);
+  gtk_label_set_use_markup (GTK_LABEL (label341), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (label341), 0, 0.5);
+
   button4calf = gtk_button_new_with_mnemonic (_("Calculer la facture "));
   gtk_widget_show (button4calf);
   gtk_fixed_put (GTK_FIXED (fixed63), button4calf, 408, 424);
@@ -2936,13 +2968,6 @@ create_w4 (void)
   gtk_widget_show (buttonFiltrer);
   gtk_fixed_put (GTK_FIXED (fixed63), buttonFiltrer, 232, 112);
   gtk_widget_set_size_request (buttonFiltrer, 100, 29);
-
-  label341 = gtk_label_new (_("<b>Totale:</b>"));
-  gtk_widget_show (label341);
-  gtk_fixed_put (GTK_FIXED (fixed63), label341, 408, 32);
-  gtk_widget_set_size_request (label341, 120, 32);
-  gtk_label_set_use_markup (GTK_LABEL (label341), TRUE);
-  gtk_misc_set_alignment (GTK_MISC (label341), 0, 0.5);
 
   label339 = gtk_label_new (_("Calcul des factures"));
   gtk_widget_show (label339);
@@ -2960,6 +2985,9 @@ create_w4 (void)
   g_signal_connect ((gpointer) radiobuttonmf, "toggled",
                     G_CALLBACK (on_radiobuttonmf_toggled),
                     NULL);
+  g_signal_connect ((gpointer) button4modifphoto, "clicked",
+                    G_CALLBACK (on_button4modifphoto_clicked),
+                    NULL);
   g_signal_connect ((gpointer) buttonmodif4, "clicked",
                     G_CALLBACK (on_buttonmodif4_clicked),
                     NULL);
@@ -2968,9 +2996,6 @@ create_w4 (void)
                     NULL);
   g_signal_connect ((gpointer) buttoncancelmodif4, "clicked",
                     G_CALLBACK (on_buttoncancel4_clicked),
-                    NULL);
-  g_signal_connect ((gpointer) button4modifphoto, "clicked",
-                    G_CALLBACK (on_button4modifphoto_clicked),
                     NULL);
   g_signal_connect ((gpointer) button4calf, "clicked",
                     G_CALLBACK (on_button4calf_clicked),
@@ -2991,6 +3016,7 @@ create_w4 (void)
   GLADE_HOOKUP_OBJECT (w4, label141, "label141");
   GLADE_HOOKUP_OBJECT (w4, notebook4, "notebook4");
   GLADE_HOOKUP_OBJECT (w4, fixed24, "fixed24");
+  GLADE_HOOKUP_OBJECT (w4, image43, "image43");
   GLADE_HOOKUP_OBJECT (w4, table1, "table1");
   GLADE_HOOKUP_OBJECT (w4, labelpr41, "labelpr41");
   GLADE_HOOKUP_OBJECT (w4, labeln41, "labeln41");
@@ -3001,7 +3027,6 @@ create_w4 (void)
   GLADE_HOOKUP_OBJECT (w4, labeladr41, "labeladr41");
   GLADE_HOOKUP_OBJECT (w4, labeltel41, "labeltel41");
   GLADE_HOOKUP_OBJECT (w4, labelmail41, "labelmail41");
-  GLADE_HOOKUP_OBJECT (w4, image43, "image43");
   GLADE_HOOKUP_OBJECT (w4, buttonmodifinfo, "buttonmodifinfo");
   GLADE_HOOKUP_OBJECT (w4, alignment31, "alignment31");
   GLADE_HOOKUP_OBJECT (w4, hbox29, "hbox29");
@@ -3043,7 +3068,8 @@ create_w4 (void)
   GLADE_HOOKUP_OBJECT (w4, entrympass, "entrympass");
   GLADE_HOOKUP_OBJECT (w4, label169, "label169");
   GLADE_HOOKUP_OBJECT (w4, entrycheckpass, "entrycheckpass");
-  GLADE_HOOKUP_OBJECT (w4, image45, "image45");
+  GLADE_HOOKUP_OBJECT (w4, button4modifphoto, "button4modifphoto");
+  GLADE_HOOKUP_OBJECT (w4, image44, "image44");
   GLADE_HOOKUP_OBJECT (w4, buttonmodif4, "buttonmodif4");
   GLADE_HOOKUP_OBJECT (w4, alignment60, "alignment60");
   GLADE_HOOKUP_OBJECT (w4, hbox59, "hbox59");
@@ -3054,9 +3080,8 @@ create_w4 (void)
   GLADE_HOOKUP_OBJECT (w4, hbox60, "hbox60");
   GLADE_HOOKUP_OBJECT (w4, image90, "image90");
   GLADE_HOOKUP_OBJECT (w4, label337, "label337");
-  GLADE_HOOKUP_OBJECT (w4, button4modifphoto, "button4modifphoto");
-  GLADE_HOOKUP_OBJECT (w4, image44, "image44");
-  GLADE_HOOKUP_OBJECT (w4, checkbutton7, "checkbutton7");
+  GLADE_HOOKUP_OBJECT (w4, checkbuttonmodifpwd, "checkbuttonmodifpwd");
+  GLADE_HOOKUP_OBJECT (w4, image45, "image45");
   GLADE_HOOKUP_OBJECT (w4, label171, "label171");
   GLADE_HOOKUP_OBJECT (w4, fixed63, "fixed63");
   GLADE_HOOKUP_OBJECT (w4, hbox62, "hbox62");
@@ -3064,10 +3089,10 @@ create_w4 (void)
   GLADE_HOOKUP_OBJECT (w4, spinbuttonselectmonth, "spinbuttonselectmonth");
   GLADE_HOOKUP_OBJECT (w4, scrolledwindow11, "scrolledwindow11");
   GLADE_HOOKUP_OBJECT (w4, treeview10, "treeview10");
+  GLADE_HOOKUP_OBJECT (w4, label341, "label341");
   GLADE_HOOKUP_OBJECT (w4, button4calf, "button4calf");
   GLADE_HOOKUP_OBJECT (w4, button4pdf, "button4pdf");
   GLADE_HOOKUP_OBJECT (w4, buttonFiltrer, "buttonFiltrer");
-  GLADE_HOOKUP_OBJECT (w4, label341, "label341");
   GLADE_HOOKUP_OBJECT (w4, label339, "label339");
   GLADE_HOOKUP_OBJECT_NO_REF (w4, tooltips, "tooltips");
 
@@ -4259,6 +4284,30 @@ create_inscription (void)
   gtk_widget_show (combobox1);
   gtk_fixed_put (GTK_FIXED (fixed45), combobox1, 176, 424);
   gtk_widget_set_size_request (combobox1, 180, 31);
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Ariana"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("B\303\251ja"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Ben Arous"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Bizerte"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Gab\303\250s"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Gafsa"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Jendouba"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Kairouan"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Kasserine"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Kebili"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Kef"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Mahdia"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Manouba"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("M\303\251denine"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Monastir"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Nabeul"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Sfax"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Sidi Bouzid"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Siliana"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Sousse"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Tataouine"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Tozeur"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Tunis"));
+  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _("Zaghouan"));
 
   buttonvalidinscrip = gtk_button_new ();
   gtk_widget_show (buttonvalidinscrip);
