@@ -21,7 +21,6 @@ main (int argc, char *argv[])
   GtkWidget *w1espaceadmin;
   GtkWidget *w5;
   GtkWidget *w3;
-  GtkWidget *w6;
   GtkWidget *w4;
   GtkWidget *w2;
   GtkWidget *inscription;
@@ -31,6 +30,8 @@ main (int argc, char *argv[])
   GtkWidget *dialogobserverparking;
   GtkWidget *dialogajoutparking;
   GtkWidget *dialogaffecteragent;
+  GtkWidget *w6;
+  GtkWidget *aboutdialog1;
 
 #ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -60,8 +61,6 @@ main (int argc, char *argv[])
   gtk_widget_show (w5);
   w3 = create_w3 ();
   gtk_widget_show (w3);
-  w6 = create_w6 ();
-  gtk_widget_show (w6);
   w4 = create_w4 ();
   gtk_widget_show (w4);
   w2 = create_w2 ();
@@ -80,6 +79,10 @@ main (int argc, char *argv[])
   gtk_widget_show (dialogajoutparking);
   dialogaffecteragent = create_dialogaffecteragent ();
   gtk_widget_show (dialogaffecteragent);
+  w6 = create_w6 ();
+  gtk_widget_show (w6);
+  aboutdialog1 = create_aboutdialog1 ();
+  gtk_widget_show (aboutdialog1);
 
   gtk_main ();
   return 0;

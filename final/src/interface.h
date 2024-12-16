@@ -18,3 +18,4 @@ GtkWidget* create_dialogobserverparking (void);
 GtkWidget* create_dialogajoutparking (void);
 GtkWidget* create_dialogaffecteragent (void);
 GtkWidget* create_w6 (void);
+GtkWidget* create_aboutdialog1 (void);

@@ -50,6 +50,14 @@ on_buttonAbout_clicked                 (GtkButton       *button,
                                         gpointer         user_data);
 
 void
+on_buttonGestionAg_clicked             (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_buttonListeCit_clicked              (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
 on_buttonGestionPark_clicked           (GtkButton       *button,
                                         gpointer         user_data);
 
@@ -58,11 +66,11 @@ on_buttonGestionServ_clicked           (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_buttonGestionAg_clicked             (GtkButton       *button,
+on_buttonQuit_clicked                  (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_buttonListeCit_clicked              (GtkButton       *button,
+on_buttonReturncit_clicked             (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -77,17 +85,9 @@ void
 on_button33_clicked                    (GtkButton       *button,
                                         gpointer         user_data);
 
-void
-on_label21_activate_current_link       (GtkLabel        *label,
-                                        gpointer         user_data);
-
 gboolean
 on_button19_selection_clear_event      (GtkWidget       *widget,
                                         GdkEventSelection *event,
-                                        gpointer         user_data);
-
-void
-on_label37_activate_current_link       (GtkLabel        *label,
                                         gpointer         user_data);
 
 void
@@ -107,7 +107,11 @@ on_button32_clicked                    (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_label84_activate_current_link       (GtkLabel        *label,
+on_buttonReturnad_clicked              (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_buttonRechercheS_clicked            (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -115,35 +119,65 @@ on_buttonSupprimerS_clicked            (GtkButton       *button,
                                         gpointer         user_data);
 
 void
+on_buttonAfficherS_clicked             (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_radiobuttonAjoutTypeSV_toggled      (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobuttonAjoutTypeSN_toggled      (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_checkbuttonNonDisponible_toggled    (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_checkbuttonAjoutDisponibiliteS_toggled
+                                        (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
 on_buttonAjoutValiderS_clicked         (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_button4_clicked                     (GtkButton       *button,
+on_buttonRechercherSM_clicked          (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_checkbuttonpblm1_check_resize       (GtkContainer    *container,
+on_radiobuttonModifTypeSN_clicked      (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_checkbuttonprblm2_check_resize      (GtkContainer    *container,
+on_radiobuttonModifTypeSV_clicked      (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_checkbuttonautres_check_resize      (GtkContainer    *container,
+on_checkbuttonModifDisponibiliteS_toggled
+                                        (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 void
-on_checkbuttonprblm3_check_resize      (GtkContainer    *container,
+on_checkbuttonNonDisponibleM_toggled   (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 void
-on_radiobutt_group_changed             (GtkRadioButton  *radiobutton,
+on_buttonModifValiderS_clicked         (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_buttonENG_clicked                   (GtkButton       *button,
+on_buttonAfficher2_clicked             (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_AffecterS_clicked                   (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_buttonmodifinfo_clicked             (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -152,6 +186,10 @@ on_radiobuttonmh_toggled               (GtkToggleButton *togglebutton,
 
 void
 on_radiobuttonmf_toggled               (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_button4modifphoto_clicked           (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -167,11 +205,7 @@ on_buttoncancel4_clicked               (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_button4modifphoto_clicked           (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_buttonPDF_clicked                   (GtkButton       *button,
+on_button4calf_clicked                 (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -183,15 +217,43 @@ on_buttonFiltrer_clicked               (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_button4calf_clicked                 (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
 on_button12_clicked                    (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_button14_clicked                    (GtkButton       *button,
+on_checkbutton_confadd_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_buttonajoutag2_clicked              (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_radiobutton_homt_toggled            (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobuttonn_femt_toggled           (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_buttonmodifag_clicked               (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_checkbutton_confmod_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobutton_femmod_toggled          (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_radiobutton_hommodt_toggled         (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_buttonrefresh2_clicked              (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -215,7 +277,7 @@ on_radiobutton1_group_changed          (GtkRadioButton  *radiobutton,
                                         gpointer         user_data);
 
 void
-on_buttonReturnad_clicked              (GtkButton       *button,
+on_buttonRetunad_clicked               (GtkButton       *button,
                                         gpointer         user_data);
 
 void
@@ -267,71 +329,25 @@ on_closebutton3_clicked                (GtkButton       *button,
                                         gpointer         user_data);
 
 void
-on_buttonReturncit_clicked             (GtkButton       *button,
+on_treeview61_row_activated            (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
                                         gpointer         user_data);
 
 void
-on_buttonReturnad_clicked              (GtkButton       *button,
+on_checkAUTRES_toggled                 (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 void
-on_buttonmodifinfo_clicked             (GtkButton       *button,
+on_checkTECHNIQUE_toggled              (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 void
-on_button4pdf_clicked                  (GtkButton       *button,
+on_checkFACTURATION_toggled            (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 void
-on_buttonRetunad_clicked               (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_radiobuttonaff2_toggled             (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_radiobuttonnonaff2_toggled          (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_checkbutton_confadd_toggled         (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_buttonajoutag2_clicked              (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_radiobutton_homt_toggled            (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_radiobuttonn_femt_toggled           (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_buttonmodifag_clicked               (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_checkbutton_confmod_toggled         (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_radiobutton_femmod_toggled          (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_radiobutton_hommodt_toggled         (GtkToggleButton *togglebutton,
-                                        gpointer         user_data);
-
-void
-on_buttonrefresh2_clicked              (GtkButton       *button,
-                                        gpointer         user_data);
-
-void
-on_buttonReturncit_clicked             (GtkButton       *button,
+on_checkRESERVATION_toggled            (GtkToggleButton *togglebutton,
                                         gpointer         user_data);
 
 void
@@ -339,5 +355,49 @@ on_enrg1_clicked                       (GtkButton       *button,
                                         gpointer         user_data);
 
 void
+on_radiobuttonPROBRESOL1_toggled       (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_checkAUTRES2_toggled                (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_checkRESERVATION2_toggled           (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_checkFACTURATION2_toggled           (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_checkTECHNIQUE2_toggled             (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
 on_supprimer_clicked                   (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_enrg2_clicked                       (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_radiobuttonPROBRESOL2_toggled       (GtkToggleButton *togglebutton,
+                                        gpointer         user_data);
+
+void
+on_treeview62_row_activated            (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data);
+
+void
+on_treeview63_row_activated            (GtkTreeView     *treeview,
+                                        GtkTreePath     *path,
+                                        GtkTreeViewColumn *column,
+                                        gpointer         user_data);
+
+void
+on_aboutdialog1_close                  (GtkDialog       *dialog,
                                         gpointer         user_data);
