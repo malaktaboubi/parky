@@ -555,35 +555,7 @@
 	</widget>
 	<packing>
 	  <property name="x">632</property>
-	  <property name="y">416</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="buttonHelp">
-	  <property name="width_request">58</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <signal name="clicked" handler="on_buttonHelp_clicked" last_modification_time="Fri, 18 Oct 2024 23:04:56 GMT"/>
-
-	  <child>
-	    <widget class="GtkImage" id="imageHelpbut">
-	      <property name="visible">True</property>
-	      <property name="stock">gtk-help</property>
-	      <property name="icon_size">4</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xpad">0</property>
-	      <property name="ypad">0</property>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">632</property>
-	  <property name="y">456</property>
+	  <property name="y">440</property>
 	</packing>
       </child>
     </widget>
@@ -1118,63 +1090,6 @@ Cette action est définitive.</property>
 	  <property name="visible">True</property>
 
 	  <child>
-	    <widget class="GtkButton" id="buttonHelp">
-	      <property name="width_request">58</property>
-	      <property name="height_request">32</property>
-	      <property name="visible">True</property>
-	      <property name="can_focus">True</property>
-	      <property name="relief">GTK_RELIEF_NORMAL</property>
-	      <property name="focus_on_click">True</property>
-	      <signal name="clicked" handler="on_buttonHelp_clicked" last_modification_time="Mon, 25 Nov 2024 18:56:53 GMT"/>
-
-	      <child>
-		<widget class="GtkImage" id="image4">
-		  <property name="visible">True</property>
-		  <property name="stock">gtk-info</property>
-		  <property name="icon_size">4</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		</widget>
-	      </child>
-	    </widget>
-	    <packing>
-	      <property name="x">624</property>
-	      <property name="y">376</property>
-	    </packing>
-	  </child>
-
-	  <child>
-	    <widget class="GtkButton" id="buttonAbout">
-	      <property name="width_request">58</property>
-	      <property name="height_request">32</property>
-	      <property name="visible">True</property>
-	      <property name="can_focus">True</property>
-	      <property name="relief">GTK_RELIEF_NORMAL</property>
-	      <property name="focus_on_click">True</property>
-	      <signal name="clicked" handler="on_buttonHelp_clicked" last_modification_time="Fri, 18 Oct 2024 23:04:56 GMT"/>
-	      <signal name="clicked" handler="on_buttonAbout_clicked" last_modification_time="Mon, 25 Nov 2024 18:57:01 GMT"/>
-
-	      <child>
-		<widget class="GtkImage" id="image5">
-		  <property name="visible">True</property>
-		  <property name="stock">gtk-help</property>
-		  <property name="icon_size">4</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		</widget>
-	      </child>
-	    </widget>
-	    <packing>
-	      <property name="x">624</property>
-	      <property name="y">416</property>
-	    </packing>
-	  </child>
-
-	  <child>
 	    <widget class="GtkButton" id="buttonGestionAg">
 	      <property name="width_request">280</property>
 	      <property name="height_request">51</property>
@@ -1590,6 +1505,35 @@ Cette action est définitive.</property>
 	    <packing>
 	      <property name="x">40</property>
 	      <property name="y">400</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkButton" id="buttonAbout">
+	      <property name="width_request">58</property>
+	      <property name="height_request">32</property>
+	      <property name="visible">True</property>
+	      <property name="can_focus">True</property>
+	      <property name="relief">GTK_RELIEF_NORMAL</property>
+	      <property name="focus_on_click">True</property>
+	      <signal name="clicked" handler="on_buttonHelp_clicked" last_modification_time="Fri, 18 Oct 2024 23:04:56 GMT"/>
+	      <signal name="clicked" handler="on_buttonAbout_clicked" last_modification_time="Mon, 25 Nov 2024 18:57:01 GMT"/>
+
+	      <child>
+		<widget class="GtkImage" id="image5">
+		  <property name="visible">True</property>
+		  <property name="stock">gtk-info</property>
+		  <property name="icon_size">4</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		</widget>
+	      </child>
+	    </widget>
+	    <packing>
+	      <property name="x">624</property>
+	      <property name="y">416</property>
 	    </packing>
 	  </child>
 	</widget>
@@ -7313,8 +7257,70 @@ Zaghouan</property>
 	      </child>
 
 	      <child>
+		<widget class="GtkButton" id="button4calf">
+		  <property name="width_request">144</property>
+		  <property name="height_request">44</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Calculer la facture </property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_button4calf_clicked" last_modification_time="Mon, 28 Oct 2024 10:41:45 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">408</property>
+		  <property name="y">424</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="buttonFiltrer">
+		  <property name="width_request">100</property>
+		  <property name="height_request">29</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Filtrer</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_buttonFiltrer_clicked" last_modification_time="Fri, 18 Oct 2024 23:13:53 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">232</property>
+		  <property name="y">112</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkLabel" id="label341">
+		  <property name="width_request">128</property>
+		  <property name="height_request">40</property>
+		  <property name="visible">True</property>
+		  <property name="label" translatable="yes">&lt;b&gt;Totale:&lt;/b&gt;</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">True</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
+		</widget>
+		<packing>
+		  <property name="x">400</property>
+		  <property name="y">32</property>
+		</packing>
+	      </child>
+
+	      <child>
 		<widget class="GtkScrolledWindow" id="scrolledwindow11">
-		  <property name="width_request">496</property>
+		  <property name="width_request">520</property>
 		  <property name="height_request">264</property>
 		  <property name="visible">True</property>
 		  <property name="can_focus">True</property>
@@ -7340,88 +7346,8 @@ Zaghouan</property>
 		  </child>
 		</widget>
 		<packing>
-		  <property name="x">40</property>
+		  <property name="x">24</property>
 		  <property name="y">152</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkLabel" id="label341">
-		  <property name="width_request">120</property>
-		  <property name="height_request">32</property>
-		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">&lt;b&gt;Totale:&lt;/b&gt;</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">True</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
-		</widget>
-		<packing>
-		  <property name="x">408</property>
-		  <property name="y">32</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkButton" id="button4calf">
-		  <property name="width_request">144</property>
-		  <property name="height_request">44</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Calculer la facture </property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		  <signal name="clicked" handler="on_button4calf_clicked" last_modification_time="Mon, 28 Oct 2024 10:41:45 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">408</property>
-		  <property name="y">424</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkButton" id="button4pdf">
-		  <property name="width_request">144</property>
-		  <property name="height_request">40</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Télecharger(PDF)</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		  <signal name="clicked" handler="on_button4pdf_clicked" last_modification_time="Fri, 06 Dec 2024 21:28:59 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">408</property>
-		  <property name="y">472</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkButton" id="buttonFiltrer">
-		  <property name="width_request">100</property>
-		  <property name="height_request">29</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Filtrer</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		  <signal name="clicked" handler="on_buttonFiltrer_clicked" last_modification_time="Fri, 18 Oct 2024 23:13:53 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">232</property>
-		  <property name="y">112</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -13330,27 +13256,6 @@ disponibles: </property>
 	      <property name="visible">True</property>
 
 	      <child>
-		<widget class="GtkTreeView" id="treeview17">
-		  <property name="width_request">440</property>
-		  <property name="height_request">432</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="headers_visible">False</property>
-		  <property name="rules_hint">True</property>
-		  <property name="reorderable">False</property>
-		  <property name="enable_search">True</property>
-		  <property name="fixed_height_mode">False</property>
-		  <property name="hover_selection">False</property>
-		  <property name="hover_expand">False</property>
-		  <signal name="row_activated" handler="on_treeview61_row_activated" last_modification_time="Fri, 13 Dec 2024 12:52:53 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">184</property>
-		  <property name="y">32</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkImage" id="image161">
 		  <property name="width_request">112</property>
 		  <property name="height_request">120</property>
@@ -13364,33 +13269,6 @@ disponibles: </property>
 		<packing>
 		  <property name="x">8</property>
 		  <property name="y">16</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkButton" id="button136">
-		  <property name="width_request">40</property>
-		  <property name="height_request">40</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image162">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-refresh</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		  </child>
-		</widget>
-		<packing>
-		  <property name="x">136</property>
-		  <property name="y">32</property>
 		</packing>
 	      </child>
 
@@ -13455,6 +13333,40 @@ disponibles: </property>
 		<packing>
 		  <property name="x">24</property>
 		  <property name="y">144</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkScrolledWindow" id="scrolledwindow21">
+		  <property name="width_request">440</property>
+		  <property name="height_request">432</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="hscrollbar_policy">GTK_POLICY_ALWAYS</property>
+		  <property name="vscrollbar_policy">GTK_POLICY_ALWAYS</property>
+		  <property name="shadow_type">GTK_SHADOW_NONE</property>
+		  <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
+
+		  <child>
+		    <widget class="GtkTreeView" id="treeview17">
+		      <property name="width_request">440</property>
+		      <property name="height_request">432</property>
+		      <property name="visible">True</property>
+		      <property name="can_focus">True</property>
+		      <property name="headers_visible">False</property>
+		      <property name="rules_hint">True</property>
+		      <property name="reorderable">False</property>
+		      <property name="enable_search">True</property>
+		      <property name="fixed_height_mode">False</property>
+		      <property name="hover_selection">False</property>
+		      <property name="hover_expand">False</property>
+		      <signal name="row_activated" handler="on_treeview61_row_activated" last_modification_time="Fri, 13 Dec 2024 12:52:53 GMT"/>
+		    </widget>
+		  </child>
+		</widget>
+		<packing>
+		  <property name="x">184</property>
+		  <property name="y">32</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -13588,32 +13500,6 @@ disponibles: </property>
 	      </child>
 
 	      <child>
-		<widget class="GtkLabel" id="label523">
-		  <property name="width_request">128</property>
-		  <property name="height_request">24</property>
-		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">avisID:</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">False</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0.10000000149</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">80</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkEntry" id="avisID">
 		  <property name="width_request">150</property>
 		  <property name="height_request">30</property>
@@ -13629,50 +13515,7 @@ disponibles: </property>
 		</widget>
 		<packing>
 		  <property name="x">8</property>
-		  <property name="y">104</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkImage" id="image163">
-		  <property name="width_request">152</property>
-		  <property name="height_request">152</property>
-		  <property name="visible">True</property>
-		  <property name="pixbuf">parky.png</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">152</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkLabel" id="label518">
-		  <property name="width_request">136</property>
-		  <property name="height_request">25</property>
-		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">Choisir un parking:</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">False</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">16</property>
+		  <property name="y">144</property>
 		</packing>
 	      </child>
 
@@ -13727,27 +13570,6 @@ disponibles: </property>
 		<packing>
 		  <property name="x">184</property>
 		  <property name="y">192</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkCheckButton" id="checkFACTURATION">
-		  <property name="width_request">200</property>
-		  <property name="height_request">30</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Problème de facturation</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		  <property name="active">False</property>
-		  <property name="inconsistent">False</property>
-		  <property name="draw_indicator">True</property>
-		  <signal name="toggled" handler="on_checkFACTURATION_toggled" last_modification_time="Fri, 13 Dec 2024 12:53:31 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">184</property>
-		  <property name="y">136</property>
 		</packing>
 	      </child>
 
@@ -13864,7 +13686,7 @@ disponibles: </property>
 	      </child>
 
 	      <child>
-		<widget class="GtkComboBox" id="combo12">
+		<widget class="GtkComboBox" id="combo2">
 		  <property name="width_request">153</property>
 		  <property name="height_request">31</property>
 		  <property name="visible">True</property>
@@ -13873,7 +13695,177 @@ disponibles: </property>
 		</widget>
 		<packing>
 		  <property name="x">6</property>
-		  <property name="y">48</property>
+		  <property name="y">71</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkImage" id="image163">
+		  <property name="width_request">152</property>
+		  <property name="height_request">152</property>
+		  <property name="visible">True</property>
+		  <property name="pixbuf">parky.png</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		</widget>
+		<packing>
+		  <property name="x">0</property>
+		  <property name="y">264</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkLabel" id="label523">
+		  <property name="width_request">128</property>
+		  <property name="height_request">24</property>
+		  <property name="visible">True</property>
+		  <property name="label" translatable="yes">avisID:</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">False</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0.10000000149</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
+		</widget>
+		<packing>
+		  <property name="x">8</property>
+		  <property name="y">112</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkLabel" id="label518">
+		  <property name="width_request">136</property>
+		  <property name="height_request">25</property>
+		  <property name="visible">True</property>
+		  <property name="label" translatable="yes">Choisir un parking:</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">False</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
+		</widget>
+		<packing>
+		  <property name="x">11</property>
+		  <property name="y">39</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="initialiser61">
+		  <property name="width_request">136</property>
+		  <property name="height_request">32</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_initialiser61_clicked" last_modification_time="Tue, 17 Dec 2024 19:37:30 GMT"/>
+
+		  <child>
+		    <widget class="GtkAlignment" id="alignment104">
+		      <property name="visible">True</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xscale">0</property>
+		      <property name="yscale">0</property>
+		      <property name="top_padding">0</property>
+		      <property name="bottom_padding">0</property>
+		      <property name="left_padding">0</property>
+		      <property name="right_padding">0</property>
+
+		      <child>
+			<widget class="GtkHBox" id="hbox105">
+			  <property name="visible">True</property>
+			  <property name="homogeneous">False</property>
+			  <property name="spacing">2</property>
+
+			  <child>
+			    <widget class="GtkImage" id="image174">
+			      <property name="visible">True</property>
+			      <property name="stock">gtk-refresh</property>
+			      <property name="icon_size">4</property>
+			      <property name="xalign">0.5</property>
+			      <property name="yalign">0.5</property>
+			      <property name="xpad">0</property>
+			      <property name="ypad">0</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+
+			  <child>
+			    <widget class="GtkLabel" id="label558">
+			      <property name="visible">True</property>
+			      <property name="label" translatable="yes">initialiser</property>
+			      <property name="use_underline">True</property>
+			      <property name="use_markup">False</property>
+			      <property name="justify">GTK_JUSTIFY_LEFT</property>
+			      <property name="wrap">False</property>
+			      <property name="selectable">False</property>
+			      <property name="xalign">0.5</property>
+			      <property name="yalign">0.5</property>
+			      <property name="xpad">0</property>
+			      <property name="ypad">0</property>
+			      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+			      <property name="width_chars">-1</property>
+			      <property name="single_line_mode">False</property>
+			      <property name="angle">0</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+		</widget>
+		<packing>
+		  <property name="x">16</property>
+		  <property name="y">8</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkCheckButton" id="checkFACTURATION">
+		  <property name="width_request">200</property>
+		  <property name="height_request">30</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Problème de facturation</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <property name="active">False</property>
+		  <property name="inconsistent">False</property>
+		  <property name="draw_indicator">True</property>
+		  <signal name="toggled" handler="on_checkFACTURATION_toggled" last_modification_time="Fri, 13 Dec 2024 12:53:31 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">184</property>
+		  <property name="y">136</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -14045,49 +14037,6 @@ disponibles: </property>
 	      </child>
 
 	      <child>
-		<widget class="GtkLabel" id="label528">
-		  <property name="width_request">136</property>
-		  <property name="height_request">25</property>
-		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">Selectionner l'avis:</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">False</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">16</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkImage" id="image164">
-		  <property name="width_request">152</property>
-		  <property name="height_request">152</property>
-		  <property name="visible">True</property>
-		  <property name="pixbuf">parkingr.jpeg</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">120</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkLabel" id="label529">
 		  <property name="width_request">150</property>
 		  <property name="height_request">30</property>
@@ -14255,7 +14204,7 @@ disponibles: </property>
 	      </child>
 
 	      <child>
-		<widget class="GtkComboBox" id="combobox4">
+		<widget class="GtkComboBox" id="combo3">
 		  <property name="width_request">152</property>
 		  <property name="height_request">31</property>
 		  <property name="visible">True</property>
@@ -14264,7 +14213,130 @@ disponibles: </property>
 		</widget>
 		<packing>
 		  <property name="x">6</property>
-		  <property name="y">53</property>
+		  <property name="y">83</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkImage" id="image164">
+		  <property name="width_request">152</property>
+		  <property name="height_request">152</property>
+		  <property name="visible">True</property>
+		  <property name="pixbuf">parkingr.jpeg</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		</widget>
+		<packing>
+		  <property name="x">8</property>
+		  <property name="y">248</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkLabel" id="label528">
+		  <property name="width_request">136</property>
+		  <property name="height_request">25</property>
+		  <property name="visible">True</property>
+		  <property name="label" translatable="yes">Selectionner l'avis:</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">False</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
+		</widget>
+		<packing>
+		  <property name="x">8</property>
+		  <property name="y">48</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="initialiser62">
+		  <property name="width_request">136</property>
+		  <property name="height_request">32</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_initialiser62_clicked" last_modification_time="Tue, 17 Dec 2024 19:38:26 GMT"/>
+
+		  <child>
+		    <widget class="GtkAlignment" id="alignment105">
+		      <property name="visible">True</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xscale">0</property>
+		      <property name="yscale">0</property>
+		      <property name="top_padding">0</property>
+		      <property name="bottom_padding">0</property>
+		      <property name="left_padding">0</property>
+		      <property name="right_padding">0</property>
+
+		      <child>
+			<widget class="GtkHBox" id="hbox106">
+			  <property name="visible">True</property>
+			  <property name="homogeneous">False</property>
+			  <property name="spacing">2</property>
+
+			  <child>
+			    <widget class="GtkImage" id="image175">
+			      <property name="visible">True</property>
+			      <property name="stock">gtk-refresh</property>
+			      <property name="icon_size">4</property>
+			      <property name="xalign">0.5</property>
+			      <property name="yalign">0.5</property>
+			      <property name="xpad">0</property>
+			      <property name="ypad">0</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+
+			  <child>
+			    <widget class="GtkLabel" id="label559">
+			      <property name="visible">True</property>
+			      <property name="label" translatable="yes">initialiser</property>
+			      <property name="use_underline">True</property>
+			      <property name="use_markup">False</property>
+			      <property name="justify">GTK_JUSTIFY_LEFT</property>
+			      <property name="wrap">False</property>
+			      <property name="selectable">False</property>
+			      <property name="xalign">0.5</property>
+			      <property name="yalign">0.5</property>
+			      <property name="xpad">0</property>
+			      <property name="ypad">0</property>
+			      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+			      <property name="width_chars">-1</property>
+			      <property name="single_line_mode">False</property>
+			      <property name="angle">0</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+		</widget>
+		<packing>
+		  <property name="x">16</property>
+		  <property name="y">8</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -14306,49 +14378,6 @@ disponibles: </property>
 	      <property name="visible">True</property>
 
 	      <child>
-		<widget class="GtkLabel" id="label531">
-		  <property name="width_request">136</property>
-		  <property name="height_request">25</property>
-		  <property name="visible">True</property>
-		  <property name="label" translatable="yes">Choisir un parking:</property>
-		  <property name="use_underline">False</property>
-		  <property name="use_markup">False</property>
-		  <property name="justify">GTK_JUSTIFY_LEFT</property>
-		  <property name="wrap">False</property>
-		  <property name="selectable">False</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		  <property name="width_chars">-1</property>
-		  <property name="single_line_mode">False</property>
-		  <property name="angle">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">16</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkImage" id="image165">
-		  <property name="width_request">152</property>
-		  <property name="height_request">152</property>
-		  <property name="visible">True</property>
-		  <property name="pixbuf">parky.png</property>
-		  <property name="xalign">0.5</property>
-		  <property name="yalign">0.5</property>
-		  <property name="xpad">0</property>
-		  <property name="ypad">0</property>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">120</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkLabel" id="label532">
 		  <property name="width_request">176</property>
 		  <property name="height_request">32</property>
@@ -14375,27 +14404,6 @@ disponibles: </property>
 	      </child>
 
 	      <child>
-		<widget class="GtkTreeView" id="treeview18">
-		  <property name="width_request">408</property>
-		  <property name="height_request">432</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="headers_visible">False</property>
-		  <property name="rules_hint">True</property>
-		  <property name="reorderable">False</property>
-		  <property name="enable_search">True</property>
-		  <property name="fixed_height_mode">False</property>
-		  <property name="hover_selection">False</property>
-		  <property name="hover_expand">False</property>
-		  <signal name="row_activated" handler="on_treeview62_row_activated" last_modification_time="Fri, 13 Dec 2024 12:57:29 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">216</property>
-		  <property name="y">32</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkVSeparator" id="vseparator23">
 		  <property name="width_request">24</property>
 		  <property name="height_request">448</property>
@@ -14408,34 +14416,7 @@ disponibles: </property>
 	      </child>
 
 	      <child>
-		<widget class="GtkButton" id="button140">
-		  <property name="width_request">40</property>
-		  <property name="height_request">40</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image166">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-refresh</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		  </child>
-		</widget>
-		<packing>
-		  <property name="x">168</property>
-		  <property name="y">32</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkComboBox" id="combo14">
+		<widget class="GtkComboBox" id="combo4">
 		  <property name="width_request">155</property>
 		  <property name="height_request">30</property>
 		  <property name="visible">True</property>
@@ -14444,7 +14425,164 @@ disponibles: </property>
 		</widget>
 		<packing>
 		  <property name="x">5</property>
+		  <property name="y">81</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkImage" id="image165">
+		  <property name="width_request">152</property>
+		  <property name="height_request">152</property>
+		  <property name="visible">True</property>
+		  <property name="pixbuf">parky.png</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		</widget>
+		<packing>
+		  <property name="x">8</property>
+		  <property name="y">232</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkLabel" id="label531">
+		  <property name="width_request">136</property>
+		  <property name="height_request">25</property>
+		  <property name="visible">True</property>
+		  <property name="label" translatable="yes">Choisir un parking:</property>
+		  <property name="use_underline">False</property>
+		  <property name="use_markup">False</property>
+		  <property name="justify">GTK_JUSTIFY_LEFT</property>
+		  <property name="wrap">False</property>
+		  <property name="selectable">False</property>
+		  <property name="xalign">0.5</property>
+		  <property name="yalign">0.5</property>
+		  <property name="xpad">0</property>
+		  <property name="ypad">0</property>
+		  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		  <property name="width_chars">-1</property>
+		  <property name="single_line_mode">False</property>
+		  <property name="angle">0</property>
+		</widget>
+		<packing>
+		  <property name="x">8</property>
 		  <property name="y">48</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="initialiser63">
+		  <property name="width_request">136</property>
+		  <property name="height_request">32</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_initialiser63_clicked" last_modification_time="Tue, 17 Dec 2024 19:39:52 GMT"/>
+
+		  <child>
+		    <widget class="GtkAlignment" id="alignment106">
+		      <property name="visible">True</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xscale">0</property>
+		      <property name="yscale">0</property>
+		      <property name="top_padding">0</property>
+		      <property name="bottom_padding">0</property>
+		      <property name="left_padding">0</property>
+		      <property name="right_padding">0</property>
+
+		      <child>
+			<widget class="GtkHBox" id="hbox107">
+			  <property name="visible">True</property>
+			  <property name="homogeneous">False</property>
+			  <property name="spacing">2</property>
+
+			  <child>
+			    <widget class="GtkImage" id="image176">
+			      <property name="visible">True</property>
+			      <property name="stock">gtk-refresh</property>
+			      <property name="icon_size">4</property>
+			      <property name="xalign">0.5</property>
+			      <property name="yalign">0.5</property>
+			      <property name="xpad">0</property>
+			      <property name="ypad">0</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+
+			  <child>
+			    <widget class="GtkLabel" id="label560">
+			      <property name="visible">True</property>
+			      <property name="label" translatable="yes">initialiser</property>
+			      <property name="use_underline">True</property>
+			      <property name="use_markup">False</property>
+			      <property name="justify">GTK_JUSTIFY_LEFT</property>
+			      <property name="wrap">False</property>
+			      <property name="selectable">False</property>
+			      <property name="xalign">0.5</property>
+			      <property name="yalign">0.5</property>
+			      <property name="xpad">0</property>
+			      <property name="ypad">0</property>
+			      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+			      <property name="width_chars">-1</property>
+			      <property name="single_line_mode">False</property>
+			      <property name="angle">0</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+		</widget>
+		<packing>
+		  <property name="x">16</property>
+		  <property name="y">8</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkScrolledWindow" id="scrolledwindow22">
+		  <property name="width_request">440</property>
+		  <property name="height_request">424</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="hscrollbar_policy">GTK_POLICY_ALWAYS</property>
+		  <property name="vscrollbar_policy">GTK_POLICY_ALWAYS</property>
+		  <property name="shadow_type">GTK_SHADOW_NONE</property>
+		  <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
+
+		  <child>
+		    <widget class="GtkTreeView" id="treeview18">
+		      <property name="width_request">440</property>
+		      <property name="height_request">424</property>
+		      <property name="visible">True</property>
+		      <property name="can_focus">True</property>
+		      <property name="headers_visible">False</property>
+		      <property name="rules_hint">True</property>
+		      <property name="reorderable">False</property>
+		      <property name="enable_search">True</property>
+		      <property name="fixed_height_mode">False</property>
+		      <property name="hover_selection">False</property>
+		      <property name="hover_expand">False</property>
+		      <signal name="row_activated" handler="on_treeview62_row_activated" last_modification_time="Fri, 13 Dec 2024 12:57:29 GMT"/>
+		    </widget>
+		  </child>
+		</widget>
+		<packing>
+		  <property name="x">184</property>
+		  <property name="y">32</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -14484,54 +14622,6 @@ disponibles: </property>
 	      <property name="visible">True</property>
 
 	      <child>
-		<widget class="GtkTreeView" id="treeview19">
-		  <property name="width_request">568</property>
-		  <property name="height_request">432</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="headers_visible">False</property>
-		  <property name="rules_hint">True</property>
-		  <property name="reorderable">False</property>
-		  <property name="enable_search">True</property>
-		  <property name="fixed_height_mode">False</property>
-		  <property name="hover_selection">False</property>
-		  <property name="hover_expand">False</property>
-		  <signal name="row_activated" handler="on_treeview63_row_activated" last_modification_time="Fri, 13 Dec 2024 12:57:46 GMT"/>
-		</widget>
-		<packing>
-		  <property name="x">56</property>
-		  <property name="y">32</property>
-		</packing>
-	      </child>
-
-	      <child>
-		<widget class="GtkButton" id="button141">
-		  <property name="width_request">40</property>
-		  <property name="height_request">40</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image167">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-refresh</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		  </child>
-		</widget>
-		<packing>
-		  <property name="x">8</property>
-		  <property name="y">32</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkLabel" id="label534">
 		  <property name="width_request">150</property>
 		  <property name="height_request">30</property>
@@ -14554,6 +14644,40 @@ disponibles: </property>
 		<packing>
 		  <property name="x">56</property>
 		  <property name="y">0</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkScrolledWindow" id="scrolledwindow23">
+		  <property name="width_request">568</property>
+		  <property name="height_request">432</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="hscrollbar_policy">GTK_POLICY_ALWAYS</property>
+		  <property name="vscrollbar_policy">GTK_POLICY_ALWAYS</property>
+		  <property name="shadow_type">GTK_SHADOW_NONE</property>
+		  <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
+
+		  <child>
+		    <widget class="GtkTreeView" id="treeview19">
+		      <property name="width_request">568</property>
+		      <property name="height_request">432</property>
+		      <property name="visible">True</property>
+		      <property name="can_focus">True</property>
+		      <property name="headers_visible">False</property>
+		      <property name="rules_hint">True</property>
+		      <property name="reorderable">False</property>
+		      <property name="enable_search">True</property>
+		      <property name="fixed_height_mode">False</property>
+		      <property name="hover_selection">False</property>
+		      <property name="hover_expand">False</property>
+		      <signal name="row_activated" handler="on_treeview63_row_activated" last_modification_time="Fri, 13 Dec 2024 12:57:46 GMT"/>
+		    </widget>
+		  </child>
+		</widget>
+		<packing>
+		  <property name="x">56</property>
+		  <property name="y">32</property>
 		</packing>
 	      </child>
 	    </widget>

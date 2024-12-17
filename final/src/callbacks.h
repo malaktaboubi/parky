@@ -457,3 +457,15 @@ on_treeview8_row_activated             (GtkTreeView     *treeview,
                                         GtkTreePath     *path,
                                         GtkTreeViewColumn *column,
                                         gpointer         user_data);
+
+void
+on_initialiser61_clicked               (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_initialiser62_clicked               (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_initialiser63_clicked               (GtkButton       *button,
+                                        gpointer         user_data);
