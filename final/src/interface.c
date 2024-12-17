@@ -3241,13 +3241,6 @@ create_w2 (void)
   GtkWidget *label207;
   GtkWidget *fixed33;
   GtkWidget *treeview8;
-  GtkWidget *label209;
-  GtkObject *spinbutton50_adj;
-  GtkWidget *spinbutton50;
-  GtkObject *spinbutton51_adj;
-  GtkWidget *spinbutton51;
-  GtkObject *spinbutton52_adj;
-  GtkWidget *spinbutton52;
   GtkWidget *label212;
   GtkWidget *fixed105;
   GtkWidget *entry_supp2;
@@ -3759,31 +3752,8 @@ create_w2 (void)
 
   treeview8 = gtk_tree_view_new ();
   gtk_widget_show (treeview8);
-  gtk_fixed_put (GTK_FIXED (fixed33), treeview8, 48, 240);
+  gtk_fixed_put (GTK_FIXED (fixed33), treeview8, 48, 88);
   gtk_widget_set_size_request (treeview8, 536, 256);
-
-  label209 = gtk_label_new (_("Choisir la date de consultation des r\303\251servations\n"));
-  gtk_widget_show (label209);
-  gtk_fixed_put (GTK_FIXED (fixed33), label209, 32, 40);
-  gtk_widget_set_size_request (label209, 336, 41);
-
-  spinbutton50_adj = gtk_adjustment_new (31, 1, 31, 1, 10, 10);
-  spinbutton50 = gtk_spin_button_new (GTK_ADJUSTMENT (spinbutton50_adj), 1, 0);
-  gtk_widget_show (spinbutton50);
-  gtk_fixed_put (GTK_FIXED (fixed33), spinbutton50, 376, 40);
-  gtk_widget_set_size_request (spinbutton50, 72, 27);
-
-  spinbutton51_adj = gtk_adjustment_new (12, 1, 12, 1, 10, 10);
-  spinbutton51 = gtk_spin_button_new (GTK_ADJUSTMENT (spinbutton51_adj), 1, 0);
-  gtk_widget_show (spinbutton51);
-  gtk_fixed_put (GTK_FIXED (fixed33), spinbutton51, 472, 40);
-  gtk_widget_set_size_request (spinbutton51, 60, 27);
-
-  spinbutton52_adj = gtk_adjustment_new (2024, 2024, 2025, 1, 10, 10);
-  spinbutton52 = gtk_spin_button_new (GTK_ADJUSTMENT (spinbutton52_adj), 1, 0);
-  gtk_widget_show (spinbutton52);
-  gtk_fixed_put (GTK_FIXED (fixed33), spinbutton52, 560, 40);
-  gtk_widget_set_size_request (spinbutton52, 60, 27);
 
   label212 = gtk_label_new (_("Consulter R\303\251servations\n par Date"));
   gtk_widget_show (label212);
@@ -4009,10 +3979,6 @@ create_w2 (void)
   GLADE_HOOKUP_OBJECT (w2, label207, "label207");
   GLADE_HOOKUP_OBJECT (w2, fixed33, "fixed33");
   GLADE_HOOKUP_OBJECT (w2, treeview8, "treeview8");
-  GLADE_HOOKUP_OBJECT (w2, label209, "label209");
-  GLADE_HOOKUP_OBJECT (w2, spinbutton50, "spinbutton50");
-  GLADE_HOOKUP_OBJECT (w2, spinbutton51, "spinbutton51");
-  GLADE_HOOKUP_OBJECT (w2, spinbutton52, "spinbutton52");
   GLADE_HOOKUP_OBJECT (w2, label212, "label212");
   GLADE_HOOKUP_OBJECT (w2, fixed105, "fixed105");
   GLADE_HOOKUP_OBJECT (w2, entry_supp2, "entry_supp2");
