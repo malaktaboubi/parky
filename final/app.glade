@@ -7595,7 +7595,7 @@ Zaghouan</property>
 		      <property name="fixed_height_mode">True</property>
 		      <property name="hover_selection">False</property>
 		      <property name="hover_expand">False</property>
-		      <signal name="row_activated" handler="on_treeview5_row_activated" last_modification_time="Tue, 17 Dec 2024 16:37:45 GMT"/>
+		      <signal name="row_activated" handler="on_treeview5_row_activated" last_modification_time="Tue, 17 Dec 2024 17:55:01 GMT"/>
 		    </widget>
 		  </child>
 		</widget>
@@ -9255,6 +9255,7 @@ Zaghouan</property>
 		  <property name="fixed_height_mode">False</property>
 		  <property name="hover_selection">False</property>
 		  <property name="hover_expand">False</property>
+		  <signal name="row_activated" handler="on_treeview8_row_activated" last_modification_time="Tue, 17 Dec 2024 17:55:27 GMT"/>
 		</widget>
 		<packing>
 		  <property name="x">48</property>

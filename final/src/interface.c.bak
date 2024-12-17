@@ -3875,6 +3875,9 @@ create_w2 (void)
   g_signal_connect ((gpointer) button_mod2, "clicked",
                     G_CALLBACK (on_button_mod2_clicked),
                     NULL);
+  g_signal_connect ((gpointer) treeview8, "row_activated",
+                    G_CALLBACK (on_treeview8_row_activated),
+                    NULL);
   g_signal_connect ((gpointer) button_supp, "clicked",
                     G_CALLBACK (on_button_supp_clicked),
                     NULL);
