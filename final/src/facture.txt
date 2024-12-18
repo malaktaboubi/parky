@@ -1,0 +1,6 @@
+- Reservation: Parking Name: parking1, Duration: 5 hours, Cost: 25.00
+  - Service: Name: servic, Cost: 10
+- Reservation: Parking Name: parking2, Duration: 3 hours, Cost: 18.00
+  - Service: Name: service2, Cost: 15
+
+Total Cost: 68.00

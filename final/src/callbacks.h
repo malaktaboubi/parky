@@ -469,3 +469,47 @@ on_initialiser62_clicked               (GtkButton       *button,
 void
 on_initialiser63_clicked               (GtkButton       *button,
                                         gpointer         user_data);
+
+void
+on_buttonconsulter_clicked             (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_button_supp2_clicked                (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_button_rech2_clicked                (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhannuler5_clicked                  (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhajout5_clicked                    (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhsupprimer5_clicked                (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhaffichertreeview1_clicked         (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhannulermodif5_clicked             (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhenregistrer5_clicked              (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhrecherchreservation_clicked       (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_dhaffichertree2_clicked             (GtkButton       *button,
+                                        gpointer         user_data);
