@@ -5284,7 +5284,6 @@ create_w5 (void)
   GtkWidget *entry22;
   GtkWidget *label594;
   GtkWidget *label595;
-  GtkWidget *image187;
   GtkWidget *dhrecherchreservation;
   GtkWidget *alignment113;
   GtkWidget *hbox115;
@@ -5293,6 +5292,7 @@ create_w5 (void)
   GtkWidget *radiobutton2;
   GSList *radiobutton2_group = NULL;
   GtkWidget *radiobutton3;
+  GtkWidget *image187;
   GtkWidget *label597;
   GtkWidget *fixed111;
   GtkWidget *scrolledwindow26;
@@ -5773,11 +5773,6 @@ create_w5 (void)
   gtk_fixed_put (GTK_FIXED (fixed110), label595, 24, 80);
   gtk_widget_set_size_request (label595, 112, 24);
 
-  image187 = create_pixmap (w5, NULL);
-  gtk_widget_show (image187);
-  gtk_fixed_put (GTK_FIXED (fixed110), image187, 536, 64);
-  gtk_widget_set_size_request (image187, 128, 104);
-
   dhrecherchreservation = gtk_button_new ();
   gtk_widget_show (dhrecherchreservation);
   gtk_fixed_put (GTK_FIXED (fixed110), dhrecherchreservation, 312, 136);
@@ -5813,6 +5808,11 @@ create_w5 (void)
   gtk_widget_set_size_request (radiobutton3, 116, 24);
   gtk_radio_button_set_group (GTK_RADIO_BUTTON (radiobutton3), radiobutton2_group);
   radiobutton2_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radiobutton3));
+
+  image187 = create_pixmap (w5, "rb_54065_3_optimized.png");
+  gtk_widget_show (image187);
+  gtk_fixed_put (GTK_FIXED (fixed110), image187, 488, 8);
+  gtk_widget_set_size_request (image187, 208, 168);
 
   label597 = gtk_label_new (_("Rechercher une reservation"));
   gtk_widget_show (label597);
@@ -5994,7 +5994,6 @@ create_w5 (void)
   GLADE_HOOKUP_OBJECT (w5, entry22, "entry22");
   GLADE_HOOKUP_OBJECT (w5, label594, "label594");
   GLADE_HOOKUP_OBJECT (w5, label595, "label595");
-  GLADE_HOOKUP_OBJECT (w5, image187, "image187");
   GLADE_HOOKUP_OBJECT (w5, dhrecherchreservation, "dhrecherchreservation");
   GLADE_HOOKUP_OBJECT (w5, alignment113, "alignment113");
   GLADE_HOOKUP_OBJECT (w5, hbox115, "hbox115");
@@ -6002,6 +6001,7 @@ create_w5 (void)
   GLADE_HOOKUP_OBJECT (w5, label87, "label87");
   GLADE_HOOKUP_OBJECT (w5, radiobutton2, "radiobutton2");
   GLADE_HOOKUP_OBJECT (w5, radiobutton3, "radiobutton3");
+  GLADE_HOOKUP_OBJECT (w5, image187, "image187");
   GLADE_HOOKUP_OBJECT (w5, label597, "label597");
   GLADE_HOOKUP_OBJECT (w5, fixed111, "fixed111");
   GLADE_HOOKUP_OBJECT (w5, scrolledwindow26, "scrolledwindow26");
